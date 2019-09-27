@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>All about {{ character.name }}</h1>
+    <img src="{{ character.image }}" alt="Profile pic" />
+    <p>Born on: {{ character.birthday.strftime("%B %d") }}</p>
+    <ul>
+    {% for l in character.languages %}
+        <li>{{ l }}</li>
+    {% endfor %}
+    </ul>
+    <p>{{ character.bio }}</p>
+{% endblock %}

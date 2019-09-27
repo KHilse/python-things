@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Languages</h1>
+    {% for l,c in langs.items() %}
+        <div>
+            <p><strong>{{ l }}</strong></p> used by {{ ', '.join(c) }}
+        </div>
+    {% endfor %}
+{% endblock %}
