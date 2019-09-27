@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Python Things</title>
+        <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}"> -->
+        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    </head>
+    <body>
+        {% include "./partials/header.html" %}
+        <img src="/static/logo.png" style="max-width: 600px" />
+        <div class="container">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html> 

@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Characters</h1>
+<div>
+    Character List
+</div>
+<hr />
+<h2>Add a new character</h2>
+<form method="POST" action="/characters/">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" class="form-input" />        
+    </div>
+    <div>
+        <label for="image">Image:</label>
+        <input type="text" id="image" name="image" class="form-input" />        
+    </div>
+    <div>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday" class="form-input" />        
+    </div>
+    <div>
+        <label for="languages">Favorite Languages:</label>
+        <input type="text" id="languages" name="languages" class="form-input" />        
+    </div>
+    <div>
+        <label for="bio">Bio:</label>
+        <input type="text" id="bio" name="bio" class="form-input" />        
+    </div>
+    <input type="submit" value="Submit" />
+</form>
+{% endblock %}
